@@ -40,3 +40,26 @@ $("form[name=login_form]").submit(function(e){
 
     e.preventDefault();
 });
+
+
+$("form[name=contact_form]").submit(function(e){
+    var $form = $(this);
+    var $error = $form.find(".error");
+    var data = $form.serialize();
+
+    $.ajax({
+        url: "/forget_pass/",
+        type: "POST",
+        data: data,
+        dataType: "json",
+        success: function(resp){
+            $error.text("Email sent").removeClass("error--hidden");
+            window.location.href = "/";
+        },
+        error: function(resp){
+            $error.text(resp.responseJSON.error).removeClass("error--hidden");
+        }
+    });
+
+    e.preventDefault();
+});
