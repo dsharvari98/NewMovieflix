@@ -21,7 +21,7 @@
             <div class="menu-container">
                 <ul class="menu-list">
                     <li class="menu-list-item active"><a href="">Home</a></li>
-                    <li class="menu-list-item"><a href="">Movies</a></li>
+                    <li class="menu-list-item" id="movie"><a href="">Movies</a></li>
                     <li class="menu-list-item"><a href="">Series</a></li>
                     <li class="menu-list-item"><a href="">Popular</a></li>
                     <li class="menu-list-item"><a href="">Trends</a></li>
@@ -31,8 +31,7 @@
             <div class="profile-container">
                 <img class="profile-picture" src="img/profile.jpg" alt="">
                 <div class="profile-text-container">
-                    <span class="profile-text">Profile</span>
-                    <i class="fas fa-caret-down"></i>
+                    <span class="profile-text"><a href="profile.html">Profile</a></span>
                 </div>
                 <div class="toggle">
                     <i class="fas fa-moon toggle-icon"></i>
@@ -43,13 +42,11 @@
         </div>
     </div>
     <div class="sidebar">
-        <i class="left-menu-icon fas fa-search"></i>
-        <i class="left-menu-icon fas fa-home"></i>
-        <i class="left-menu-icon fas fa-users"></i>
-        <i class="left-menu-icon fas fa-bookmark"></i>
-        <i class="left-menu-icon fas fa-tv"></i>
-        <i class="left-menu-icon fas fa-hourglass-start"></i>
-        <i class="left-menu-icon fas fa-shopping-cart"></i>
+        <i class="left-menu-icon fas fa-search tooltip"><span class="tooltiptext">Search</span></i>
+        <i class="left-menu-icon fas fa-home tooltip"><span class="tooltiptext">Home</span></i>
+        <i class="left-menu-icon fas fa-list-ul tooltip"><span class="tooltiptext">My List</span></i>
+        <i class="left-menu-icon fas fa-cog tooltip"><span class="tooltiptext">Settings</span></i>
+        <i class="left-menu-icon fas fa-shopping-cart tooltip"><span class="tooltiptext">Subscription</span></i>
     </div>
     <div class="container">
         <div class="content-container">
@@ -62,7 +59,7 @@
                 <button class="featured-button">WATCH</button>
             </div>
             <div class="movie-list-container">
-                <h1 class="movie-list-title">NEW RELEASES</h1>
+                <h1 class="movie-list-title" id="movies">MOVIES</h1>
                 <div class="movie-list-wrapper">
                     <div class="movie-list">
                         <div class="movie-list-item">
@@ -119,7 +116,7 @@
                 </div>
             </div>
             <div class="movie-list-container">
-                <h1 class="movie-list-title">NEW RELEASES</h1>
+                <h1 class="movie-list-title">Web Series</h1>
                 <div class="movie-list-wrapper">
                     <div class="movie-list">
                         <div class="movie-list-item">
@@ -184,7 +181,7 @@
                 <button class="featured-button">WATCH</button>
             </div>
             <div class="movie-list-container">
-                <h1 class="movie-list-title">NEW RELEASES</h1>
+                <h1 class="movie-list-title">Popular</h1>
                 <div class="movie-list-wrapper">
                     <div class="movie-list">
                         <div class="movie-list-item">
@@ -241,7 +238,7 @@
                 </div>
             </div>
             <div class="movie-list-container">
-                <h1 class="movie-list-title">NEW RELEASES</h1>
+                <h1 class="movie-list-title">Trends</h1>
                 <div class="movie-list-wrapper">
                     <div class="movie-list">
                         <div class="movie-list-item">
